@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "9478473522",
+    "firebase_url": "https://catholicsense-f8d60.firebaseio.com",
+    "project_id": "catholicsense-f8d60",
+    "storage_bucket": "catholicsense-f8d60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9478473522:android:dc427331883901a3bfb92b",
+        "android_client_info": {
+          "package_name": "com.sheap.Amigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACpfR4jPqDQMLudkMSlkDfid8k633xSd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9478473522:android:f88deec345da6f98bfb92b",
+        "android_client_info": {
+          "package_name": "com.sheap.CatholicSense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACpfR4jPqDQMLudkMSlkDfid8k633xSd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9478473522:android:4f2a7504331acb8abfb92b",
+        "android_client_info": {
+          "package_name": "com.sheap.SPUCCentral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACpfR4jPqDQMLudkMSlkDfid8k633xSd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9478473522:android:39b73876d7bfbbe3bfb92b",
+        "android_client_info": {
+          "package_name": "com.sheap.WalsinghamApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACpfR4jPqDQMLudkMSlkDfid8k633xSd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9478473522-clrbuavi8r8au5b8tg111ndcpu6s8mn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

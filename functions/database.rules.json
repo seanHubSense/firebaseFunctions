@@ -1,0 +1,114 @@
+{
+  "rules": {
+    "communication":{
+    	".read": "auth != null",
+        // grants write access to the owner of this user account
+        // whose uid must exactly match the key ($user_id)
+      ".write": "auth != null",
+      "eventID":{
+      	".validate": "newData.val() != null"
+      }
+    },
+    "events":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+      "$event": {
+          // new $event must have a data
+          ".validate": "newData.hasChildren(['category', 'description','eventName', 'postcode'])  && newData.child('eventName').isString() && newData.child('category').isNumber() && newData.child('postcode').isString()"
+        }
+    },
+      "eventsexposed":{
+    	".read": "true",
+    	".write": "auth != null",
+      "$event": {
+          // new $event must have a data
+          ".validate": "newData.hasChildren(['category', 'description','eventName', 'postcode'])  && newData.child('eventName').isString() && newData.child('category').isNumber() && newData.child('postcode').isString()"
+        }
+    },
+      "system":{
+    	".read": "auth != null",
+    	".write": "false"
+    },
+    	"eventweekly":{
+    		".read": "auth != null",
+    		".write": "auth != null",
+      	"$event": {
+          // new $event must have a data
+          ".validate": "newData.hasChildren(['category', 'description','eventName', 'postcode'])  && newData.child('eventName').isString() && newData.child('category').isNumber() && newData.child('postcode').isString()"
+        }
+    },
+    "follows":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+      "tailID":{
+	      ".validate": "newData.child('tailID').val() == auth.uid"}
+    },
+    "notification":{
+    	".read": "auth != null",
+      ".write": "auth != null",
+    	"userID": {
+        ".validate": "auth != null && newData.val() === auth.uid"
+      }
+    },
+    "eventchain":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "usererrors":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "usereventnotifications":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "userevents":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "usernotifications":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "userreports":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+    "usersettings":{
+    	".read": "auth != null",
+    	".write": "auth != null",
+    },
+      
+    "companies":{
+      ".read": "auth != null",
+    	".write": "auth != null && data.exists()",
+    },
+    "users":{
+      ".read": "auth != null",
+      "$user_id": {
+        // grants write access to the owner of this user account
+        // whose uid must exactly match the key ($user_id)
+        ".write": "auth != null ",
+      },
+    },
+    "usernames":{
+      ".read": "auth != null",
+    	".write": "auth != null",
+      "$usernames_id": {
+        ".validate":"!data.exists()"
+        // ".validate": "!root.child('usernames').child(newData.val()).exists()"
+      }
+      
+    },
+//     "users": {
+//       "$uid": {
+//       	"username":{
+//       		".validate": "
+//         		!root.child('usernames').child(newData.val()).exists() ||
+// 		        root.child('usernames').child(newData.val()).val() == $uid"
+    			
+//       	}
+//       }
+    // }
+  }
+}
